@@ -259,6 +259,57 @@
 
 	</div>
 </body>
+<!-- 音乐播放器容器 -->
+<div id="aplayer"></div>
+
+<!-- 必需依赖 -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.css">
+<script src="https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/meting@2.0.1/dist/Meting.min.js"></script>
+
+<!-- 配置实现 -->
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  // 根据你的配置转换的参数
+  new MetingJS({
+    element: document.getElementById('aplayer'),
+    fixed: true,          // 固定在右下角
+    lrcType: 3,           // 歌词显示模式
+    server: 'netease',    // 网易云源
+    type: 'playlist',     // 播放列表类型
+    id: '8152976493',     // 对应歌单ID
+    volume: 0.7,          // 初始音量
+    autoplay: false       // 禁止自动播放
+  });
+
+  // 控制台显示处理
+  <?php if ($console_widescreen_music): ?>
+  const style = document.createElement('style');
+  style.innerHTML = `.aplayer.aplayer-fixed { right: 420px !important; }`;
+  document.head.appendChild(style);
+  <?php endif; ?>
+});
+</script>
+
+<!-- 样式定制 -->
+<style>
+/* 位置调整 */
+.aplayer.aplayer-fixed {
+  left: auto;
+  right: 20px;
+  bottom: 20px;
+  z-index: 9999;
+}
+
+/* 移动端适配 */
+@media (max-width: 768px) {
+  .aplayer {
+    width: 90% !important;
+    left: 5% !important;
+    right: auto !important;
+  }
+}
+</style>
 <script src="./static/js/script.js"> </script>
 
 
