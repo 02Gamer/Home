@@ -17,7 +17,7 @@
     </tr>
     <tr>
       <th colspan="2">宝可梦</th>
-      <th colspan="6" style="font-size: 1.2em;">花叶蒂-永恒之花</th>
+      <th colspan="6" style="font-size: 1.2em;">永恒之花</th>
     </tr>
     <tr>
       <th colspan="2">属性</th>
