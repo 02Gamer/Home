@@ -9,8 +9,8 @@
       <th colspan="6">
         <!-- 插入图片 -->
         <img 
-          src="https://archives.bulbagarden.net/media/upload/2/29/AZ%27s_Floette.png" 
-          alt="花叶蒂-永恒之花" 
+          src="images/Pokemon/Poke/SV/永恒之花.png" 
+          alt="永恒之花" 
           style="width: 200px; height: auto; display: block; margin: 0 auto;"
         >
       </th>
