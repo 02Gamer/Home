@@ -11,7 +11,7 @@
         <img 
           src="/images/Pokemon/Poke/SV/永恒之花.png" 
           alt="永恒之花" 
-          style="width: 200px; height: auto; display: block; margin: 0 auto;"
+          style="width: 150px; height: auto; display: block; margin: 0 auto;"
         >
       </th>
     </tr>
